@@ -11,32 +11,33 @@ import br.senai.sp.jandira.poligonos.ui.Menu;
 		
 		public static void main(String[] args) {
 			
-			Menu.criarMenu();
-			System.out.println("Programa Finalizado!");
+			//Menu.criarMenu();
+			//System.out.println("Programa Finalizado!");
 			
-//			Scanner leitor = new Scanner(System.in);
-//			
-//			System.out.print("Digite o valor do lado quadrado: ");
-//			double lado = leitor.nextDouble();
-//			leitor.nextLine();
-//			
-//			System.out.println("Qual é o seu nome?");
-//			String nome = leitor.nextLine();
-//			
-//			System.out.println("Olá, " + nome);
-//			
-//			Quadrado quadrado1 = new Quadrado();
-//			quadrado1.setLado(lado);
-//			quadrado1.exibirDados();
-//			
-			Retângulo retangulo = new Retângulo();
-			retangulo.setAltura(5);
-			retangulo.exibirDados();
+			//Looping / Laços de repetição
 			
-			Triângulo triangulo1 = new Triângulo();
-			triangulo1.setBase(7);
-			triangulo1.setAltura(9);
-			triangulo1.exibirDados();
+			int contador = 0;
+			while(contador < 10) {
+				System.out.println("Senai Jandira!" + contador);
+				contador = contador + 1;
+			}
+			
+			String resposta = "s";
+			while(resposta.equals("s")) {
+				System.out.println("Estamos dando voltas");
+				System.out.println("Gostaria de dar uma volta (s/n)? ");
+				Scanner leitor = new Scanner(System.in);
+				resposta = leitor.next();		
+			}
+			
+			System.out.println("----- Tabuada do 9 -------");
+			contador = 0;
+			while(contador <= 10) {
+				int resultado = 9 * contador;
+				System.out.println("9 x " + contador + " = " + resultado);
+				contador++;
+			}
+			
 			
 		}
 	}

@@ -24,6 +24,7 @@ private double altura;
 		System.out.println("Altura: " + altura);
 		System.out.println("Área total: " + calcularArea());
 	
+	
 	}
 	
 

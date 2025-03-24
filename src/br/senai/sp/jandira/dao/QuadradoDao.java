@@ -3,6 +3,7 @@ package br.senai.sp.jandira.dao;
 import java.util.Scanner;
 
 import br.senai.sp.jandira.forma_Exata.model.Quadrado;
+import br.senai.sp.jandira.poligonos.ui.Menu;
 
 public class QuadradoDao {
 	
@@ -18,6 +19,11 @@ public class QuadradoDao {
 		
 		quadrado.setLado(leitor.nextDouble());
 		quadrado.exibirDados();
+		
+		Menu.retornar();
+		
+		leitor.close();
+		
 		
 	}
 

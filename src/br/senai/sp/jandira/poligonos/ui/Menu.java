@@ -20,8 +20,8 @@ public class Menu {
 		System.out.println("3 - TRIÂNGULO");
 		System.out.println("4 - TRAPÉZIO");
 		System.out.println("5 - CIRCUNFERÊNCIA");
-		System.out.println("--------------------");
-		System.out.print("Escolha uma opção de (1-5): ");
+		System.out.println("6 - SAIR");
+		System.out.print("Escolha uma opção de (1-6): ");
 		
 		int opcao = leitor.nextInt();
 		
@@ -36,12 +36,24 @@ public class Menu {
 			// Chamar o trapézioDao
 		} else if (opcao == 5) {
 			//Chamar a circunferenciaDao
+		} else if (opcao ==6) {
+			System.out.println("Encerrando o programa. Bye!");
+			System.exit(0);
+			
 		} else {
-			System.out.println("Opção invalida! Você deve escolher um número entre 1 e 5!");
+			System.out.println("Opção invalida! Você deve escolher um número entre 1 e 6!");
 		}
 		
-		
-		
+		// Perguntar ao usuário se ele deseja continuar com outra forma
+		return;
+	
+	}
+	
+	public static void retornar() {
+		Scanner leitor = new Scanner (System.in);
+		System.out.println("Pressione o enter para continuar...");
+		leitor.nextLine(); // Espera o usuário pressionar enter
+		criarMenu();
 	}
 
 }

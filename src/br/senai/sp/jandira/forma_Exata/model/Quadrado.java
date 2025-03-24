@@ -1,5 +1,7 @@
 package br.senai.sp.jandira.forma_Exata.model;
 
+import br.senai.sp.jandira.poligonos.ui.Menu;
+
 public class Quadrado {
 	
 	private double lado;
@@ -25,6 +27,7 @@ public class Quadrado {
 		System.out.println("Área total" + calcularArea());
 		System.out.println("Perímetro: " + calcularPerimetro());
 	
+		
 	}
 	
 
